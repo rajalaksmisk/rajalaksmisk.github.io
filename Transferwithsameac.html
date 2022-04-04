@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css"> 
+
+fieldset {
+  width:50%;
+  background-color:white;
+  border:1px solid grey;
+  padding-top:50px;
+  position:relative;
+  border-radius:20px;
+  left:200px;
+}
+legend {
+  font-family:Arial,sans-serif;
+  font-weight:bold;
+  position:absolute;
+  top:20px;
+  left:12px;  
+  color:blue;
+}
+#Amt1 {
+  padding: 25px; 
+  width:200px;
+  height:200px; 
+  float:left;
+  color:blue;
+}
+#Amt2 {
+  padding: 25px;
+  width:200px;
+  height:200px;
+  float:left;  
+  color:blue;
+}
+#CurTypes {
+  padding: 25px;
+  width:100px;
+  height:100px;
+  float:left;  
+  color:blue;  
+}
+#Currency {
+padding:5px;
+border-radius:10px;
+background-color:blue;
+color:white;
+}
+#btnTransfer {
+width:100px;
+height:25px;
+margin:120px 100px 0px 0px ;
+margin-right:0px;
+text-align:center;
+border-radius:20px;
+background-color:blue;
+color:white;
+}
+.lblStrAmt {  
+  font-size: 12px;
+  color: blue;
+  float:left;
+  padding:5px;
+  margin:0px 400px 0px 20px;
+}
+.txtAmt {
+  width:200px;
+  height:20px;
+  padding:5px;
+  margin:0px 250px 0px 20px;
+  float:left;
+  border-radius:5px;
+  color:blue;  
+}
+
+html,
+body {
+			width:100%;
+			height: 100%;
+			background-image:url("images/BlueBackground.jpg");			
+			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+			padding-top:65px;
+			
+}
+#TransferAmt {
+	background-color:blue;
+        color:white;
+}
+
+</style>
+
+</head>
+<body>
+<div id="Transferwithsame">
+<form method="post" action="Transferwithsameac.html">
+<fieldset id="Transferfundinfo">
+<legend>Transfer money within your Account </legend>
+<select id="TransferAmt" value="TransferAmt">
+<option value="Transfer Current Account to Savings Account">Transfer Current Account to Savings Account</option>
+<option value="Transfer Savings Account to Current Account">Transfer Savings Account to Current Account</option>
+</select><br/>
+<div id="Amt1">
+<label class="lblAmt">8,25,500</label><br/>
+<label class="lblStr">Current Account Balance</label>
+</div>
+<div id="Amt2">
+<label class="lblAmt"> 64,350 </label><br/>
+<label class="lblStr">Savings Account Balance</label>
+</div>
+<div id="CurTypes">
+<select name="CurrencyTypes" id="Currency" value="CurrencyTypes">
+<option selected="GBP">GBP</option>
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+</select>
+</div>
+<div class=lbltransAmt>
+<label class="lblStrAmt">Enter Amount to Transfer </label>
+<input class="txtAmt" type="text" placeholder="Amount">
+<button id="btnTransfer">Transfer</button>
+</div>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
+
+

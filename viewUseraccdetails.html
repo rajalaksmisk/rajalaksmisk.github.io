@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+    	<meta charset="utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	
+	<script src="https://kit.fontawesome.com/cc9839797e.js" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+   	<script>   
+   		$(document).ready(function() {
+    		$("#Transfersame").click(function () {
+    		$("#Transferwithsame").toggle()
+ 		 });
+ 		 });
+   	</script>
+	<!-- import bootstrap cdn-->
+	<link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity=
+"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+		crossorigin="anonymous" />
+
+	<!-- import jquery cdn -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity=
+"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous">
+	</script>
+	
+	<!-- import popper.js cdn -->
+	<script src=
+"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity=
+"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous">
+	</script>
+	
+	<!-- import javascript cdn -->
+	<script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity=
+"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous">	
+
+
+	</script>
+	
+	<!-- CSS stylesheet -->
+	<style type="text/css">
+		html,
+		body {
+			width:100%;
+			height:100%;
+			background-color:cyan;
+			<!--background-image:url("images/BlueBackground.jpg");-->				
+			}		
+		.fa-solid {
+			font-size:20px;
+			color: blue;
+		}
+		.fab {
+			font_size:20px;
+			color: green;
+		     }
+		.acsummary {
+			width:300px;
+			height:150px;
+			border-radius:20px;
+			}
+		#Transfersame {
+			width:350px;
+			height:150px;
+			border-radius:20px;
+}
+		.Transferwithdiff {
+			width:350px;
+			height:150px;
+			border-radius:20px;
+}
+fieldset {
+  width:50%;
+  background-color:blue;
+  border:none;
+  padding-top:50px;
+  position:relative;
+  border-radius:20px;
+}
+legend {
+  font-family:Arial,sans-serif;
+  font-weight:bold;
+  position:absolute;
+  top:20px;
+  left:12px;  
+}
+#Amt1 {
+  padding: 25px; 
+  width:200px;
+  height:200px; 
+  float:left;
+}
+#Amt2 {
+  padding: 25px;
+  width:200px;
+  height:200px;
+  float:left;  
+}
+#CurTypes {
+  padding: 25px;
+  width:100px;
+  height:100px;
+  float:left;  
+  
+}
+#Currency {
+padding:5px;
+border-radius:10px;
+background-color:blue;
+}
+<!-- view customer ac details-->
+#customers,#viewCustomeracstmt {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;  
+}
+#customers td, #customers th,#viewCustomeracstmt td,#viewCustomeracstmt th {
+  border: 1px solid #ddd;
+  padding: 18px;
+}
+
+#customers tr,#viewCustomeracstmt tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr,#viewCustomeracstmt tr:hover {background-color: #ddd;}
+
+#customers th,#viewCustomeracstmt th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000099;
+  color: white;
+}
+#viewacdetails {
+  width:300px;
+  height:40px;
+  border-radius:20px;
+  padding: 5px;
+  margin:5px 5px 5px 25px;
+  float: left;
+  text-align:center;
+  font_size:20px;
+  background-color:Blue;
+  color: white;
+}
+#myDIV{
+  width:  100%;
+  text-align: center;  
+  margin-top: 120px;
+  margin-right:250px;
+}
+#duration {
+padding:5px;
+border-radius:10px;
+color:blue;
+margin:5px 5px 5px 5px;
+}
+#selectrange {
+margin-left:0px;
+}
+.btnprint {
+width:70px;
+padding:5px;
+margin:5px 5px 5px 25px;
+border-radius:10px;
+color:blue;
+} 
+#btnbell {
+width:30px;
+height:30px;
+border-radius:20px;
+display:transparant;
+left:-20px;
+}
+
+
+</style>
+</head>
+
+<body>
+	<!-- top navbar -->
+	<button id="btnbell"><i class="fa-solid fa-bell"></i></button>
+
+	<!-- This container contains the sidebar
+			and main content of the page -->
+	<!-- h-100 takes the full height of the body-->
+	<div class="container-fluid h-100">
+		<div class="row h-100" style="background-color:white">
+			<div class="col-2" style="background-color:cyan">
+				<h4>Sidebar</h4>
+				<!-- Navigation links in sidebar-->
+				<i class="fa-solid fa-house"></i>
+				<a href="bankhome.html">Home</a><br />
+				<br />
+				<i class="fab fa-gg-circle"></i>
+				<a href="Transferfundsdetails.html">Transfer</a><br/>
+				<br/>
+				
+			</div>
+			<!--Contains the main content
+					of the webpage-->
+			<div class="col-10" style="text-align: justify;background-color:white">
+			<div>
+				Good Morning, SaiChand
+			</div>
+			<h1 style="color:blue;font-size:30px;">View Customer Account Details</h1>
+
+<table id="customers">
+  <tr>
+    <th>Total Available Balance</th>
+    <th>Amt in</th>
+    <th> Account Number </th>
+     <th>Account Holder Name</th>
+    <th> Branch </th>    
+  </tr>
+  <tr>
+    <td>82,54,345</td>
+    <td>
+	<select name="CurrencyTypes" id="Currency" value="CurrencyTypes">
+	<option selected="GBP">GBP</option>
+	<option value="USD">USD</option>
+	<option value="EUR">EUR</option>
+	</select>
+    </td>
+    <td>564123</td>
+    <td>Christina Berglund</td>
+    <td>2nd Street London</td>    
+  </tr>
+  
+</table>
+<button id="viewacdetails" onclick="myAcviewFunction()">View Account Statement </button>
+<div class="col-10" id="myDIV">
+Account Statement.<br/>
+<label id="selectrange">select DataRange :    from:</label> <input type="date"/> 
+To:<input type="date"/> <select name="durationtoviewAcc" id="duration" value="Duration"> 
+<option selected="This Month">This Month</option>
+<option value="Last Week">Last Week </option>
+<option value="Two Weeks">Two Weeks </option>
+</select><input class="btnprint" type="button" value="Print" onClick="window.print()"><br/>
+<table id="viewCustomeracstmt">
+  <tr>
+    <th>Date</th>
+    <th>Narration</th>
+    <th>Cheque/RefNo</th>
+    <th>Withdrawl</td>
+    <th>Deosit</td>
+    <th>ClosingBalance</th>
+  </tr>
+  <tr>
+    <td>16/03/2022</td>
+    <td>Maria Anders</td>
+    <td>12356789</td>
+    <td>2000</td>
+    <td>3000</td>
+    <td>8,55,200</td>
+  </tr>
+  <tr>
+    <td>16/03/2022</td>
+    <td>Maria Anders</td>
+    <td>12356789</td>
+    <td>1000</td>
+    <td>2000</td>
+    <td>8,56,200</td>
+  </tr>  
+</div>
+<script>
+function myAcviewFunction() {
+  var x = document.getElementById("myDIV");	
+   if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+		</div>	
+		</div>
+	</div>
+</body>
+
+</html>

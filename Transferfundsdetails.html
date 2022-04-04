@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/cc9839797e.js" crossorigin="anonymous"></script>
+	
+	<!-- import bootstrap cdn-->
+	<link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity=
+"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+		crossorigin="anonymous" />
+
+	<!-- import jquery cdn -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity=
+"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous">
+	</script>
+	
+	<!-- import popper.js cdn -->
+	<script src=
+"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity=
+"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous">
+	</script>
+	
+	<!-- import javascript cdn -->
+	<script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity=
+"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous">
+	</script>
+	
+	<!-- CSS stylesheet -->
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+		}
+
+		.fa-solid {
+			font-size:20px;
+			color: blue;
+		}
+		.fab {
+			font_size:20px;
+			color: green;
+		     }
+		.acsummary {
+			width:300px;
+			height:150px;
+			border-radius:20px;
+			 background-image:url("images/viewbalance1.jpg");
+                        background-position: top;
+  			background-repeat: no-repeat;
+  			object-fit: cover;
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+			background-color:blue;
+			color:white;
+			}
+		#Transfersame {
+			width:350px;
+			height:150px;
+			border-radius:20px;
+                        background-image:url("images/moneytrans-samenew2.jpg");
+                        background-position: top;
+  			background-repeat: no-repeat;
+  			object-fit: cover;
+                        color:white;
+                        font-size:20px;
+                        font-weight:bold;
+			background-color:blue;
+			color:white;
+			}
+		.Transferwithdiff {
+			width:350px;
+			height:150px;
+			border-radius:20px;
+			background-image:url("images/money-transfer-diff3.jpg");
+                        background-position: top;
+  			background-repeat: no-repeat;
+  			object-fit: cover;
+                        color:blue;
+                        font-size:20px;
+                        font-weight:bold;
+			background-color:blue;
+			color:white;			
+			}
+		#CurTypes {
+  			padding: 20px;
+  			width:100px;
+  			height:30px;
+  			float:right;  
+			border-radius:20px;		
+  
+}
+	</style>
+</head>
+
+<body>
+	<!-- top navbar -->
+	
+		<!-- navbar links -->
+		<div class="collapse navbar-collapse"
+				id="navbarNavAltMarkup">
+			
+		</div>
+	</nav>
+
+	<!-- This container contains the sidebar
+			and main content of the page -->
+	<!-- h-100 takes the full height of the body-->
+	<div class="container-fluid h-100">
+		<div class="row h-100">
+			<div class="col-2" style="background-color:cyan;">
+				<h4>Sidebar</h4>
+
+				<!-- Navigation links in sidebar-->
+				<i class="fa-solid fa-house"></i>
+				<a href="bankhome.html">Home</a><br />
+				<br />
+				<i class="fab fa-gg-circle"></i>
+				<a href="#">Transfer</a><br/>
+				<br/>
+				
+			</div>
+			<!--Contains the main content
+					of the webpage-->
+			<div class="col-10" style="text-align: justify; color:Red;">
+				Welcome to Saichand
+			<div class="row">
+    			<div class="col-sm-4" style="background-color:lavender;">
+			<button class="acsummary">Account Summary <br/>
+			<label class="balamt">12345</label><br//>
+			<label style="font-size=12px; text-align=center;">Total Available Balance</label>
+			<div id="CurTypes">
+			<select name="CurrencyTypes" id="Currency" value="CurrencyTypes">
+			<option selected="GBP">GBP</option>
+			<option value="USD">USD</option>
+			<option value="EUR">EUR</option>
+			</select>
+			</div>
+
+			</button>
+			</div>
+   			<div class="col-sm-4" style="background-color:lavenderblush;">
+			<button id="Transfersame" onclick="window.location.href='Transferwithsameac.html'">Transfer Amount within an Account
+			</button>
+			</div>
+   			<div class="col-sm-4" style="background-color:lavender;">
+			<button class="Transferwithdiff" onclick="window.location.href='Transferfundsdiff.html'">Transfer Amount with different Account
+			</button>
+			 
+ 			</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
